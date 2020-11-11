@@ -16,7 +16,7 @@ the writer will not preserve XML attributes when writing the XML file.
 
 ### Prerequisites
 
-At least dotnet 3.1 is required.
+At least .NET 5.0.100 is required.
 
 ### CLI
 
