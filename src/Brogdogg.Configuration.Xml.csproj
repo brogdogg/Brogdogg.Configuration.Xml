@@ -1,28 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <RootNamespace>Brogdogg.Configuration.Xml</RootNamespace>
-    <SupportedFramework>net461;netstandard2.0;netcoreapp2.0;uap10.0.16299</SupportedFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <!-- NuGet properties -->
   <PropertyGroup>
-    <!-- NuGet properties -->
     <PackageId>Brogdogg.Configuration.Xml</PackageId>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Michael Brogdon</Authors>
     <Description>
       Library for adding a writable XML configuration source/provider.
     </Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <PackageTags>Configuration;XML;Extensions</PackageTags>
     <PackageType>Dependency</PackageType>
     <PackageProjectUrl>https://github.com/brogdogg/Brogdogg.Configuration.Xml</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.8" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="3.1.8" />
-    <PackageReference Include="OpenCover" Version="4.7.922" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="5.0" />
   </ItemGroup>
 
 </Project>
