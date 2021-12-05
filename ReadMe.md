@@ -16,25 +16,21 @@ the writer will not preserve XML attributes when writing the XML file.
 
 ### Prerequisites
 
-At least .NET 5.0.100 is required.
+At least .NET 6.0.100 is required.
 
 ### CLI
 
 ```PowerShell
 Brogdogg.Configuration.Xml> dotnet build
 Brogdogg.Configuration.Xml> dotnet test
-Microsoft (R) Test Execution Command Line Tool Version 16.7.0
+Microsoft (R) Test Execution Command Line Tool Version 17.0.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
 
-Test Run Successful.
-Total tests: 13
-     Passed: 13
- Total time: 1.3644 Seconds
-
+Passed!  - Failed:     0, Passed:    13, Skipped:     0, Total:    13, Duration: 385 ms - Brogdogg.Configuration.Xml.Tests.dll (net6.0)
 ```
 
 ## Usage Example
